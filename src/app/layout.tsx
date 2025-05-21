@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'My Personal Portfolio',
+  title: 'Alec Liu',
   description: 'A place for my thoughts, projects, and passions',
 };
 

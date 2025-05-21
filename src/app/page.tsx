@@ -6,15 +6,15 @@ export default function Home() {
     <>
       <section id="home" className="hero">
         <div className="hero-content">
-          <h1>Welcome to My Personal Space</h1>
-          <p>This is my digital home - a place for my thoughts, projects, and passions.</p>
-          <Link href="#contact" className="btn">Get in touch</Link>
+          <h1>Alec Liu</h1>
+          <p>I'm a product manager based in Los Angeles.</p>
+          <Link href="#contact" className="btn">Contact me</Link>
         </div>
         <div className="hero-image">
           {/* Use Next.js Image component for better performance */}
           <Image 
-            src="https://via.placeholder.com/400x300" 
-            alt="Hero Image" 
+            src="/alecsliu.github.io/public/images/eden_palm_pic.jpeg" 
+            alt="Photo of Alec Liu next to palm trees" 
             width={400}
             height={300}
           />
