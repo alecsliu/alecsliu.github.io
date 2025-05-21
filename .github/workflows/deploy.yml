@@ -27,14 +27,13 @@ jobs:
           cache: 'npm'
       - name: Setup Pages
         uses: actions/configure-pages@v3
-        with:
-          static_site_generator: next
       - name: Install dependencies
         run: npm ci
       - name: Build with Next.js
         run: npm run build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        # Changed from v2 to v3
+        uses: actions/upload-pages-artifact@v1
         with:
           path: ./out
 
@@ -47,4 +46,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v1
